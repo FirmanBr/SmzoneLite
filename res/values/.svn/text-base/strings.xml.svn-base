@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Smzone Lite</string>
+    <string name="app_version">1.1</string>
+    <string name="app_description">This is the auto SMS (short message system) application that will send your family and friends when you almost reach a destination you want.\n\nSet a radius from destination and Smzone will check your location. Smzone will send sms to the phone number you have entered and automatically turn off GPS location service if there is no destination anymore.</string>
+    
+    <!-- DEBUG KEY -->
+    <!-- <string name="map_api_key">08x2ew1zRMqM5Jwuf10HGwefVNdrPckt8kmRcog</string> -->
+    <string name="map_api_key">08x2ew1zRMqORTxcTCKU6LFYh62V1LjFUnyIolw</string>
+    
+    <string name="loading">Loading...</string>
+    <string name="error_save">Cannot save the record. Please try again</string>
+    <string name="allow">Allow</string>
+    <string name="dont_allow">You are not allowed</string>
+    <string name="share_app">I\'m using Smzone Lite on Android. Get it now: http://goo.gl/4tXQ6</string>
+    <string name="share_not_found">There is no application can share this content</string>
+    
+    <string name="menu_rate">Rate it</string>
+    <string name="menu_about">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    
+    <string name="gps_service_started">Smzone is running</string>
+    <string name="gps_service_stopped">Smzone stopped</string>
+    <string name="gps_service_label">Smzone</string>
+    
+    <string name="validation_title">Error</string>
+    <string name="validation_error_title">Please enter name</string>
+    <string name="validation_error_message">Please enter message to send</string>
+    <string name="validation_error_phone">Please enter phone number to receive message</string>
+    <string name="validation_error_destination">Please pick destination from map</string>
+    <string name="validation_error_radius">Please enter radius from destination</string>
+    
+    
+</resources>

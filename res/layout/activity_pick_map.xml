@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<LinearLayout style="@style/TitleBar">
+		<ImageView style="@style/TitleBarLogo" android:src="@drawable/title_logo" />
+
+		<View style="@style/TitleBarSpring" />
+		
+		<ImageView style="@style/TitleBarSeparator" />
+		<ImageButton style="@style/TitleBarAction" android:src="@drawable/ic_title_mylocation"
+			android:onClick="onMyLocationClick" />
+			
+		<ImageView style="@style/TitleBarSeparator" />
+		<ImageButton style="@style/TitleBarAction" android:src="@drawable/ic_title_ok"
+			android:onClick="onOKClick" />
+	</LinearLayout>
+	
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:padding="3dip"
+		android:background="#333333" android:gravity="center_vertical">
+		<TextView android:id="@+id/map_address" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:textColor="#ffffff" />
+	</LinearLayout>
+	
+	<com.google.android.maps.MapView
+		android:id="@+id/map" android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:apiKey="@string/map_api_key" />
+</LinearLayout>

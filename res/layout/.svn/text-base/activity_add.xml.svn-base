@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout style="@style/TitleBar">
+		<ImageView style="@style/TitleBarLogo" android:src="@drawable/title_logo" />
+
+		<View style="@style/TitleBarSpring" />
+
+		<LinearLayout android:id="@+id/ic_title_ok"
+			android:visibility="gone" android:layout_width="wrap_content"
+			android:layout_height="fill_parent">
+			<ImageView style="@style/TitleBarSeparator" />
+			<ImageButton style="@style/TitleBarAction" android:src="@drawable/ic_title_delete"
+				android:onClick="onDeleteClick" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:padding="10dip">
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Title"
+				android:textStyle="bold" />
+			<EditText android:id="@+id/title" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:singleLine="true"
+				android:layout_marginBottom="5dip" android:inputType="textCapWords" />
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Phone number"
+				android:textStyle="bold" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<EditText android:id="@+id/phone_number"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_weight="1" android:inputType="phone"
+					android:layout_marginBottom="5dip" />
+				<Button android:id="@+id/btn_pick_contact"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="Pick" />
+			</LinearLayout>
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Message to send"
+				android:textStyle="bold" />
+			<EditText android:id="@+id/message" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginBottom="5dip"
+				android:minLines="3" android:gravity="top"
+				android:hint="ex: I am coming home, please prepare dinner. I am hungry" />
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Destination"
+				android:textStyle="bold" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:orientation="vertical">
+					<EditText android:id="@+id/latitude" android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:singleLine="true"
+						android:hint="Latitude" android:enabled="false" android:editable="false"
+						android:focusable="false" />
+					<EditText android:id="@+id/longitude"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" android:hint="Longitude"
+						android:enabled="false" android:editable="false"
+						android:focusable="false" />
+				</LinearLayout>
+				<Button android:id="@+id/btn_pick_map" android:layout_width="wrap_content"
+					android:layout_height="fill_parent" android:text="Pick from map" />
+			</LinearLayout>
+			<EditText android:id="@+id/address" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:hint="Address"
+				android:enabled="false" android:editable="false" android:focusable="false"
+				android:layout_marginBottom="5dip" />
+
+			<TextView android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:text="Radius from destination"
+				android:textStyle="bold" />
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+				<EditText android:id="@+id/radius" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_weight="1"
+					android:inputType="number" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="meters"
+					android:layout_marginLeft="5dip" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@color/background2"
+		android:padding="5dip">
+		<Button android:id="@+id/btn_cancel" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="Cancel" />
+		<Button android:id="@+id/btn_save" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_weight="1"
+			android:text="Save" />
+	</LinearLayout>
+</LinearLayout>

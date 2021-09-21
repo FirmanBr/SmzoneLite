@@ -1,0 +1,39 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 41
+/private-svn/android-smzonelite/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/private-svn/android-smzonelite/!svn/ver/2
+END
+default.properties
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/private-svn/android-smzonelite/!svn/ver/1/default.properties
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/private-svn/android-smzonelite/!svn/ver/1/.classpath
+END
+proguard.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/private-svn/android-smzonelite/!svn/ver/1/proguard.cfg
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/private-svn/android-smzonelite/!svn/ver/1/.project
+END
+AndroidManifest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/private-svn/android-smzonelite/!svn/ver/1/AndroidManifest.xml
+END

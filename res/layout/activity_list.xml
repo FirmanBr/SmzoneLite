@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res/com.gits.smzonelite"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout style="@style/TitleBar">
+		<ImageView style="@style/TitleBarLogo" android:src="@drawable/title_logo" />
+
+		<View style="@style/TitleBarSpring" />
+		<ImageView style="@style/TitleBarSeparator" />
+		<ImageButton style="@style/TitleBarAction" android:src="@drawable/ic_title_share"
+			android:onClick="onShareClick" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:padding="5dip">
+
+		<Button android:id="@+id/btn_add" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="Add Zone"
+			android:textSize="14sp" />
+
+		<View android:layout_width="wrap_content" android:layout_height="1px"
+			android:background="@layout/shape_divider" android:layout_marginTop="5dip" />
+
+	</LinearLayout>
+
+	<ListView android:id="@+id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:focusable="false"
+		android:paddingLeft="5dip" android:paddingRight="5dip" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="5dip">
+		<com.admob.android.ads.AdView android:id="@+id/ad"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			myapp:backgroundColor="#FFFFFF" myapp:primaryTextColor="#173847"
+			myapp:secondaryTextColor="#173847" />
+		<ImageButton android:id="@+id/btn_close_ad" android:src="@drawable/close"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+			android:paddingLeft="10dip" android:paddingRight="0dip"
+			android:paddingTop="0dip" android:paddingBottom="10dip"
+			android:background="@android:color/transparent" android:visibility="gone" />
+	</RelativeLayout>
+</LinearLayout>
+
